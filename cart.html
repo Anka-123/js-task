@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>MoonStone</title>
+  <link rel="icon" href="img/download (7).jpg" type="image/x-icon">
+  <link rel="stylesheet" href="style/style.css" />
+</head>
+
+<body>
+
+  <script type="module">
+    import { loadHeader } from "/js/modules/header.js";
+    loadHeader();
+  </script>
+
+  <main>
+    <h2>🛒 შენი კალათა</h2>
+
+    <div id="cartItems"></div>
+
+    <p>
+      ჯამი:
+      <strong><span id="totalPrice">0.00</span> ₾</strong>
+    </p>
+
+    <form
+      id="paymentForm"
+      method="get"
+      onsubmit="return handlePayment(event)"
+    >
+      <label>
+        ბარათით გადახდა
+        <input type="radio" name="payment" value="card" required>
+      </label>
+      <br>
+
+      <label>
+        ქეშით გადახდა
+        <input type="radio" name="payment" value="cash">
+      </label>
+      <br><br>
+
+      <button type="submit">შეკვეთა</button>
+    </form>
+  </main>
+
+  <script type="module">
+    import { loadFooter } from "/js/modules/footer.js";
+    loadFooter();
+  </script>
+
+  <script src="js/modules/cart.js"></script>
+  <script type="module" src="js/pages/cartPage.js"></script>
+
+</body>
+</html>

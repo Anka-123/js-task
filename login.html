@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>MoonStone</title>
+  <link rel="icon" href="img/download (7).jpg" type="image/x-icon">
+  <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+
+<script type="module">
+  import { loadHeader } from "/js/modules/header.js";
+  loadHeader();
+</script>
+
+<main class="main4">
+  <h2>შესვლა</h2>
+
+  <form id="login-form">
+    <input type="text" name="username" placeholder="მომხმარებელი" required>
+    <input type="password" name="password" placeholder="პაროლი" required>
+    <button type="submit">შესვლა</button>
+    <p id="error" style="color:red"></p>
+  </form>
+</main>
+
+<script type="module" src="/js/pages/loginPage.js"></script>
+
+<script type="module">
+  import { loadFooter } from "/js/modules/footer.js";
+  loadFooter();
+</script>
+
+</body>
+</html>

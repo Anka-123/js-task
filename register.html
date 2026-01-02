@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>MoonStone</title>
+  <link rel="icon" href="img/download (7).jpg" type="image/x-icon">
+  <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+
+<script type="module">
+  import { loadHeader } from "/js/modules/header.js";
+  loadHeader();
+</script>
+
+<main class="main4">
+  <h2>რეგისტრაცია</h2>
+
+  <form id="register-form">
+    <input name="firstname" placeholder="სახელი" required>
+    <input name="lastname" placeholder="გვარი" required>
+    <input name="username" placeholder="მომხმარებელი" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <input name="phone" placeholder="ტელეფონი" required>
+    <input name="address" placeholder="მისამართი" required>
+    <input type="password" name="password" placeholder="პაროლი" required>
+
+    <button>რეგისტრაცია</button>
+    <p id="error" style="color:red"></p>
+  </form>
+</main>
+
+<script type="module" src="/js/pages/registerPage.js"></script>
+
+<script type="module">
+  import { loadFooter } from "/js/modules/footer.js";
+  loadFooter();
+</script>
+
+</body>
+</html>
